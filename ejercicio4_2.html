@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Seguimos con Vivus</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <object id="my-svg" type="image/svg+xml" data="images/lamp.svg" width="600px"></object>
+      <script type="text/javascript" src="js/vivus.min.js"></script>
+      <script>
+        lamp= new Vivus('my-svg', {type: 'scenario-sync', duration: 100});
+      </script>
+    </div>
+
+  </body>
+</html>
