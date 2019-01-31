@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@-ms-viewport{
+    width:device-width;
+}
+
+.container{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    grid-template-rows: 20vw 20vw 20vw 20vw;
+    grid-gap: 10px;
+    background: black;
+
+}
+header{
+    background-image: url(../images/eclipse.png);
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-family: 'Poiret One', cursive;
+    color: white;
+}
+
+p {
+    font-family: 'Poiret One', cursive;
+    color: white;
+}
+.text{
+    z-index: 10;
+    grid-area: 2 / 2 / 3 / 4;
+    font-size: 40px;
+
+}
+.img {
+    grid-area: 2 / 2 / 4 / 4;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {  
+    .img{
+        grid-area: 1 / 1 / 2 / 2
+    }
+    .text{
+        grid-area: 2 / 2 / 4 / 4
+    }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+     
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+     
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+  }
