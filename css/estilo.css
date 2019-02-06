@@ -7,14 +7,13 @@
 .container{
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(4, 4fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 20vw 20vw 20vw 20vw;
     grid-gap: 10px;
     background: black;
 
 }
 header{
-    background-image: url(../images/eclipse.png);
     background-repeat: no-repeat;
 }
 
@@ -29,30 +28,50 @@ p {
 }
 .text{
     z-index: 10;
-    grid-area: 2 / 2 / 3 / 4;
+    grid-area: 2 / 2 / 4 / 4;
     font-size: 40px;
 
 }
 .img {
     grid-area: 2 / 2 / 4 / 4;
 }
+img {
+    display: block;
+}
+
 
 @media (min-width: 768px) and (max-width: 1024px) {  
     .img{
-        grid-area: 1 / 1 / 2 / 2
+        grid-area: 2 / 2 / 4 / 4;
     }
     .text{
-        grid-area: 2 / 2 / 4 / 4
+        grid-area: 2 / 2 / 4 / 4;
+        text-align: center;
+        font-size: 35px;
+    }
+    img{
+        width: 100%;
     }
   }
-  
   /* 
     ##Device = Tablets, Ipads (landscape)
     ##Screen = B/w 768px to 1024px
   */
   
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-     
+    .img{
+        grid-area: 2 / 2 / 4 / 4;
+
+    }
+    .text{
+        grid-area: 2 / 2 / 4 / 4;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    img{
+        width: 100%;
+    }
   }
   
   /* 
@@ -61,7 +80,18 @@ p {
   */
   
   @media (min-width: 481px) and (max-width: 767px) {
-     
+    .img{
+        grid-area: 2 / 2 / 4 / 4;
+    }
+    .text{
+        grid-area: 2 / 2 / 4 / 4;
+        font-size: 20px;
+        text-align: center;
+    }
+    img{
+        width: 100%;
+    }
+
   }
   
   /* 
@@ -70,5 +100,17 @@ p {
   */
   
   @media (min-width: 320px) and (max-width: 480px) {
-    
+    .img{
+        grid-area: 2 / 2 / 4 / 4;
+        width: 15px; 
+    }
+    .text{
+        grid-area: 2 / 2 / 4 / 4;
+        font-size: 15px;
+        text-align: center;
+    }
+    img{
+        width: 100%;
+    }
+
   }
