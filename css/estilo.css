@@ -18,6 +18,7 @@ html, body {
     grid-template-rows: 20vw 20vw 20vw 20vw;
     grid-gap: 10px;
     background: black;
+    background-color: black;
 
 }
 header{
